@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1074084787551",
+    "project_id": "batterymetter-7ef13",
+    "storage_bucket": "batterymetter-7ef13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074084787551:android:833bb0e19141312b88f2ea",
+        "android_client_info": {
+          "package_name": "com.example.batterymetter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCezjp3ur9ZIW0g7JEfurH9XfmkzZKITuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

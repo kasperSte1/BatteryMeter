@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:ignore="ExtraText"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/loginTitleTextView"
+        android:layout_width="304sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/barlow_semi_condensed_black"
+        android:textColor="@color/orange"
+        android:text="BATTERY METER"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/historyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTitleTextView"
+        android:text="Historia pomiarów"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp" />
+
+    <ListView
+        android:id="@+id/HistoryRecyclerListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/AllApplicationsTextView"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+<!--
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/historyRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/orange"
+            android:textSize="15sp"/>
+
+            Tu idk czy na pewno korzystamy z tego, wyżej wkleiłem
+            po prostu liste tak jak w przypadku listy apek
+    -->
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ApplicationList">
+
+    <TextView
+        android:id="@+id/loginTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BATTERY METER"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:fontFamily="@font/barlow_semi_condensed_black"
+        android:textSize="40sp"
+        android:textColor="@color/orange"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/AllApplicationsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dostępne aplikacje"
+        android:layout_below="@id/loginTitleTextView"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/orange"
+        android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:id="@+id/appsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/AllApplicationsTextView"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

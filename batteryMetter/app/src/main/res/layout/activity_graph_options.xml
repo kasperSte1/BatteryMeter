@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/loginTitleTextView"
+        android:layout_width="304sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/barlow_semi_condensed_black"
+        android:textColor="@color/orange"
+        android:text="BATTERY METER"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/optionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTitleTextView"
+        android:text="Opcje wykresu"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/FreqTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginTitleTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="Częstotliwość: "
+            android:textColor="@color/orange"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/FreqEditText"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/orange"
+            android:backgroundTintMode="src_over"
+            android:hint="Wpisz tutaj"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>

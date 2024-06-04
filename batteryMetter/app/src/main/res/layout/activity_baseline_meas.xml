@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/loginTitleTextView"
+        android:layout_width="304sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/barlow_semi_condensed_black"
+        android:textColor="@color/orange"
+        android:text="BATTERY METER"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/Wynik"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/barlow_semi_condensed_black"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_above="@id/Wynik"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:max="200"
+            android:progress="0"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/PomiarBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/orange"
+            android:text="Rozpocznij pomiar bazowy"
+            android:textSize="32sp"
+            android:layout_centerInParent="true"/>
+        <Button
+            android:id="@+id/Goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/orange"
+            android:text="Powrót do menu"
+            android:textSize="32sp"
+            android:layout_centerInParent="true"/>
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/barlow_semi_condensed_black"
+        android:textColor="@color/orange"
+        android:text="Pomiar bazowy jest wymagany do poprawnego działania aplikacji,najlepiej wykonać go przed każdą sesją pomiarową."
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+
+        >
+
+    </TextView>
+
+
+</RelativeLayout>

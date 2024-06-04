@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Login">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/loginTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/barlow_semi_condensed_black"
+        android:textColor="@color/orange"
+        android:text="BATTERY METER"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/AppTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTitleTextView"
+        android:text="Aplikacja"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+<!--    <Button-->
+<!--        android:id="@+id/optionButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/orange"-->
+<!--        android:text="Opcje"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:padding="5dp" />-->
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/mychart"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_margin="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+<!--        <Button-->
+<!--            android:id="@+id/historyButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:backgroundTint="@color/orange"-->
+<!--            android:text="Historia"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            android:padding="5dp"-->
+<!--            android:minWidth="48dp"-->
+<!--            android:minHeight="48dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:layout_marginTop="5dp" />-->
+
+        <Button
+            android:id="@+id/StartButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/orange"
+            android:text="Pomiar"
+            android:textColorHint="@color/white"
+            android:padding="5dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp" />
+
+
+<!--        <Button-->
+<!--            android:id="@+id/resetButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:backgroundTint="@color/orange"-->
+<!--            android:text="Wyczyść wykres"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            android:padding="5dp"-->
+<!--            android:minWidth="48dp"-->
+<!--            android:minHeight="48dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:layout_marginBottom="20dp" />-->
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Częstotliwość pomiaru (Hz):"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/freq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"
+        android:backgroundTint="@color/orange"
+        android:backgroundTintMode="src_over"
+        android:inputType="number"
+        android:textColor="@color/orange"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+    </EditText>
+    <Button
+        android:id="@+id/SaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/orange"
+        android:text="Zapisz Pomiar"
+        android:textColorHint="@color/white"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/ResetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/orange"
+        android:text="Wyczyść wykres"
+        android:textColorHint="@color/white"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
+</ScrollView>
