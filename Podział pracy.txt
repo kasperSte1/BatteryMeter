@@ -1,0 +1,9 @@
+Research - wszyscy
+Logika robienia pomiaru - Oliwier, Kasper
+Połączenie z bazą danych - Kasper
+Wykresy - Kasper
+Debuging, testowanie - Janek, Kuba, Miłosz
+Strona internetowa frontend - Miłosz, Kuba
+Strona internetowa backend - Miłosz, Kuba
+Aplikacja frontend - wszyscy
+Dokumentacja - wszyscy
